@@ -1,6 +1,6 @@
 import os,sys
-from views import app
+from views.index import app
 
-sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+# sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 
-app.run(8888)
+app.run(host='0.0.0.0',port=8888)
